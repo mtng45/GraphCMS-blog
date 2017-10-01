@@ -71,14 +71,19 @@ GraphCMSでは、コンテンツモデルにトリガを定義できるため、
 
 `Asset`モデルのフィールドは次のとおりです。
 
-- `fileName`ファイルの名前
+- `fileName`:ファイルの名前
 - `handle` : ファイルの固有の識別子を処理する
 - `url` : ファイルのパブリックURL。常にmedia.graphcms.com/`handle`です。
 - `size` : ファイルのサイズ
 - `mimeType` : ファイルのインターネット資産の種類
-- `isPublic` : isPublicファイルがパブリックに使用可能かどうかを示すフラグです（現在は常にtrueです）。
+- `isPublic` : ファイルがパブリックに使用可能かどうかを示すフラグです（現在は常にtrueです）。
 
 
+### System Fields
+GraphCMSの各コンテンツモデルには、デフォルトで次のシステムフィールドがあります。
 
-
+- `id`:コンテンツエントリの一意の識別子を格納します。
+- `createdAt`:コンテンツエントリが作成された日付
+- `updatedAt`:最後にコンテンツエントリが更新された日付
+- `isPublished`:コンテンツエントリが公開されているかどうかを示します（[ここ](https://graphcms.com/docs/guides/Publishing_workflow/)を参照）
 
