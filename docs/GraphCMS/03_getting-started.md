@@ -58,4 +58,10 @@ GraphCMSでコンテンツAPIを構築するのは簡単です！この入門ガ
 > フィールドの順序を変更するには、左側のアイコンの項目をドラッグします。ここで定義する設定は、このコンテンツモデルのエントリを作成または編集できるエントリフォーム内の同じ順序です。
 
 ## Fields for model Record
+このモデルは、音楽レコードのコンテンツを格納します。フィールドは次のようになります。
 
+- Title `#title` `Single Line Text` `required`
+- Tracklist `#tracklist` `Single Line Text` `Allow multiple values`
+- Cover `#cover` `Asset`
+
+このモデルのAPI ID `#artists`との関係フィールドに気付いた？このフィールドエントリは、前に作成した`ArtistRecord Relation`の`reverse side`にあるためです。 GraphQLコンテンツAPIを構築しているので、両方向にトラバースできる必要があります。
