@@ -113,7 +113,7 @@ Hannah Popannaの新しい記録にレビューを追加しましょう。ここ
 
 統合されたGraphiQLエディタを使用して、GraphQLクエリで入力を開始できます。サーバーに次のクエリを送信します。
 
-```json
+```javascript
 {
   allRecordStores {
     name
