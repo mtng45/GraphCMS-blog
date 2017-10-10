@@ -80,12 +80,10 @@ yarn add -D babel-preset-react
 yarn add -D webpack
 ```
 
-#### webpack-dev-server
+### webpack-dev-server
 - `webpack-dev-server`をインストール
 > live reloadingを提供する開発サーバー  
 [webpack/webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 ```
 yarn add -D webpack-dev-server
 ```
-
-## configファイルの作成
