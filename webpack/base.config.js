@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
@@ -9,6 +8,17 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../build'),
     filename: '[name].js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader'
+        }
+      }
+    ]
   },
   devServer: {
     host: '0.0.0.0',
