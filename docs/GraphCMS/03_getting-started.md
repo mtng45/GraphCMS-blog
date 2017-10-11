@@ -104,7 +104,7 @@ Hannah Popannaの新しい記録にレビューを追加しましょう。ここ
 ### Creating a record store
 ほぼ完了！最後のステップでは、`Record Store`のエントリを作成します。場所を追加するには、マップウィジェットを使用できます。
 
-クール。コンテンツの作成が完了したので、`API EXPLORER`のGraphQLコンテンツAPIを調べてみまし！。
+クール。コンテンツの作成が完了したので、`API EXPLORER`のGraphQLコンテンツAPIを調べてみましょう！。
 
 ![createRecordStore](./img/createRecordStore.png)
 
