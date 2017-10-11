@@ -1,16 +1,13 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Router from './router'
-console.log('---router---')
-console.dir(Router)
+import { Provider } from 'react-redux'
 
-const Root = () => {
-  return (
-     <Router />
-  )
-}
+import store from './redux/store'
+import RouterBox from './router'
 
 render(
-  <Root />,
+  <Provider store={store}>
+    <RouterBox />
+  </Provider>,
   document.getElementById('root')
 )

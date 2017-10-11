@@ -1,4 +1,8 @@
+import Home from './home'
 import EventCalendar from './event-calendar'
 console.dir(EventCalendar)
 
-export default EventCalendar
+export {
+  Home,
+  EventCalendar
+}
