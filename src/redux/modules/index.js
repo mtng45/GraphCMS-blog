@@ -3,8 +3,7 @@
  */
 import Home from './home'
 import Calendar from './calendar'
-
-export default {
-  Home,
-  Calendar
-}
+console.log('---module---')
+console.dir(Calendar)
+console.log('------------')
+export default Calendar
