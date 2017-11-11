@@ -2,7 +2,7 @@
  * イベントカレンダーモジュール
  */
 // action
-const EVENT_CALENDAR_UPDATE = '/oneday/event'
+const UPDATE_EVENT_CALENDAR = '/oneday/event'
 
 const initState = {
   eventCalendarInfo: {}
@@ -12,7 +12,7 @@ const initState = {
 export default (state = initState, action) => {
   switch (action.type) {
     default:
-      return state
+      return initState
   }
 }
 
@@ -21,13 +21,13 @@ export default (state = initState, action) => {
  */
 export const fetchEventCalendar = () => (getState, dispatch) => {
   console.log('fetchEventClendar')
-  dispatch(UPDATE_EVENT_CALENDAR(333))
+  dispatch(updateEventCalendar(333))
 }
 
  // action creator
-export const UPDATE_EVENT_CALENDAR = (data) => {
+export const updateEventCalendar = (data) => {
   return {
-    type: EVENT_CALENDAR_UPDATE,
+    type: UPDATE_EVENT_CALENDAR,
     payload: data
   }
 }

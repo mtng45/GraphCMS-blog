@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, '../build'),
     filename: '[name].js'
   },
+  devtool: 'cheap-module-source-map',
   module: {
     rules: [
       {

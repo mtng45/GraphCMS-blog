@@ -1,9 +1,12 @@
 /**
  * モジュール
  */
-import Home from './home'
-import Calendar from './calendar'
+import * as homeModule from './homeModule'
+import * as Calendar from './calendar'
 console.log('---module---')
+console.dir(homeModule)
 console.dir(Calendar)
-console.log('------------')
-export default Calendar
+export default {
+  homeModule,
+  Calendar
+}

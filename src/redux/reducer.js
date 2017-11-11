@@ -1,10 +1,11 @@
 import { combineReducers } from 'redux'
-import Calendar from './modules'
+import Modules from './modules'
+
+const { homeModule, Calendar } = Modules
 
 const rootReducer = combineReducers({
-  Calendar
+  homeModule: homeModule.default,
+  Calendar: Calendar.default
 })
-console.log('---rootReducer---')
-console.dir(rootReducer)
-console.log('--------------')
+
 export default rootReducer
