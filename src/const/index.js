@@ -1,5 +1,5 @@
 import API from './api'
 
-export default {
+export {
   API
 }

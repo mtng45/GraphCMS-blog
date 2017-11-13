@@ -13,7 +13,6 @@ const initState = {
 
 // reducer
 export default (state = initState, action) => {
-  console.log(action)
   switch(action.type) {
     case UPDATE_HOME:
       const state = { ...state, homeInfo: action.payload }
